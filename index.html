@@ -5,101 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript-DOM-Swiggy</title>
+
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pinyon+Script&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
 
 
-    <style>
-      
-      *{
-        margin:0;
-        padding: 0;
-        box-sizing:border-box;
-        font-family: 'Poppins', sans-serif;
-      }
-      .container{
-        width:90%;
-        margin: auto;
-      }
-       .row{
-        display:flex;
-        flex-wrap:wrap;
-       }
-       .col{
-        width:25%;
-        margin: 15px 0;
-       }
-       .col-card{
-        padding: 10px;
-       }
-       img{
-        width:100%;
-       }
-       .col-card h2{
-        font-size: 17px;
-       }
-       .inner-row{
-        display:flex;
-        gap:20px;
-        align-items:center;
-        margin-top:15px;
-       }
-       h4{
-        color:#000000ba;
-        font-size: 14px;
-       }
-       .icon-div-red{
-        display: flex;
-        border: 1px solid;
-        color: #fff;
-        background-color: red;
-        padding: 2px 5px;
-        gap: 7px;
-        font-size: 12px;
-       }
-       .icon-div-green{
-        display: flex;
-        border: 1px solid;
-        color: #fff;
-        background-color: green;
-        padding: 2px 5px;
-        gap: 7px;
-        font-size: 12px;
-       }
-       .icon-div-orange{
-        display: flex;
-        border: 1px solid;
-        color: #fff;
-        background-color: orange;
-        padding: 2px 5px;
-        gap: 7px;
-        font-size: 12px;
-       }
-       .cusine-para{
-        font-size: small;
-       }
-       /* .inner-col{
-        width:33.3%
-       } */
-    </style>
+    
   </head>
   <body>
     <div class="container">
-      <h1 style="text-align :center;color:#fc892c;">SWIGGY</h1>
-      <div id="buttons">
-        <button onclick="defaultSorter()">Revelance</button>
-        <button onclick="sortRatings()">Ratings</button>
-        <button>Price</button>
-        <button onclick="filterCusine()">SouthIndian Foods</button>
-        <button onclick="sortTime()">Delivery Time</button>
+      <!-- <h1 style="text-align :center;color:#fc892c;">SWIGGY</h1> -->
+      <!-- nav section -->
+      <div class="nav-head">
+        <div class="nav-l navS">
+          <div class="nav-img-div">
+            <img src="image/swiggy.webp" alt="swiggy">
+          </div>
+          <div>
+            <label for="name">Other</label>
+            <input type="text" id="name" placeholder="Enter Your Location">
+          </div>
+           
+        </div>
+        <div class="nav-r navS">
+            <a href="#"><i class="bi bi-search"></i> Search</a>
+            <a href="#"><i class="bi bi-percent"></i> Offer</a>
+            <a href="#"><i class="bi bi-patch-question"></i> Help</a>
+            <a href="#"><i class="bi bi-person"></i> SignIn</a>
+            <a href="#"><i class="bi bi-cart"></i> Cart</a>
+        </div>
       </div>
+
+      <!-- image cards -->
+      <section class="img-sec">
+        <div class="container">
+            <div class="imgCards">
+              <img src="image/image-1.webp">
+              <img src="image/image-2.webp">
+              <img src="image/image-3.webp">
+              <img src="image/image-4.webp">
+          </div>
+        </div>
+      </section>
+      
+      <!-- buttons  -->
+      <section>
+        <div class="container">
+          <div class="res-sec">
+            <h1>1324 Restaurants</h1>
+            <div id="buttons">
+              <button onclick="defaultSorter()">Revelance</button>
+              <button onclick="sortRatings()">Rating</button>
+              <button onclick="sortPrice()">Price : Low to High</button>
+              <button onclick="filterCusine()">South Indian Foods</button>
+              <button onclick="sortTime()">Delivery Time</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      
     </div>
 
 
 
 
-
-    <script src="main.js"></script>
-    </script>
+    
+	<script src="./main.js"></script>
+   
+    
   </body>
 </html>

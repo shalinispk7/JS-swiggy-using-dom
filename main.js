@@ -3,11 +3,12 @@ let food = [
     id: 1,
     name: "Udupi Gardenia",
     cuisine: "South Indian, North Indian",
-    imgUrl:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hm9alpsl6gvphjgfyyxc",
+    imgUrl:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hm9alpsl6gvphjgfyyxc",
     ratings: "4.4",
     preparation: 45,
-    eachone: "Rs.200 for two",
-    offer:'20% upto Rs.120'
+    amount: 200,
+    units:"for two",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pljxtoxjtpn8wecz2icg",
     ratings: "3.4",
     preparation: 37,
-    eachone: "Rs.200 for two",
+    amount: 350 ,
+    units:"for two",
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/0dca660dbdf2e04f9b861c4426ffd41e",
     ratings: "2.2",
     preparation: 25,
-    eachone: "Rs.200 for two",
+    amount: 250 ,
+    units:"for two",
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ntuo17tgujgaabprbhfj",
     ratings: "4.4",
     preparation: 40,
-    eachone: "Rs.200 for two",
+    amount: 200 ,
+    units:"for two",
   },
   {
     id: 5,
@@ -47,7 +51,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/whinpapa0ltdpemkwqj0",
     ratings: "3.9",
     preparation: 45,
-    eachone: "Rs.200 for two",
+    amount: 500 ,
+    units:"for two",
   },
   {
     id: 6,
@@ -57,7 +62,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ee5f8e06b300efc07c9fe3f4df40dfc4",
     ratings: "4.4",
     preparation: 35,
-    eachone: "Rs.200 for two",
+    amount: 400 ,
+    units:"for two",
   },
   {
     id: 7,
@@ -67,7 +73,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zf2wklnad7kyvgk98thl",
     ratings: "3.3",
     preparation: 25,
-    eachone: "Rs.200 for two",
+    amount: 300 ,
+    units:"for two",
   },
   {
     id: 8,
@@ -77,7 +84,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/a8kat3hsu3fasmedhigp",
     ratings: "4.0",
     preparation: 40,
-    eachone: "Rs.200 for two",
+    amount: 250 ,
+    units:"for two",
   },
   {
     id: 9,
@@ -87,7 +95,9 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ndlmfkgwt4yrgjqss8u3",
     ratings: "3.9",
     preparation: 45,
-    eachone: "Rs.200 for two",
+    amount: "Rs.200 ",
+    amount: 300 ,
+    units:"for two",
   },
   {
     id: 10,
@@ -97,7 +107,9 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ocsapohbzangojolgvtt",
     ratings: "2.4",
     preparation: 30,
-    eachone: "Rs.200 for two",
+    amount: "Rs.200 ",
+    amount: 350 ,
+    units:"for two",
   },
   {
     id: 11,
@@ -107,7 +119,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zxczitdem6qq8hv1mt0a",
     ratings: "3.6",
     preparation: 25,
-    eachone: "Rs.200 for two",
+    amount: 390 ,
+    units:"for two",
   },
   {
     id: 12,
@@ -117,7 +130,52 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/py9b9lfxb8buvtgpq1kd",
     ratings: "4.2",
     preparation: 40,
-    eachone: "Rs.200 for two",
+    amount: 250 ,
+    units:"for two",
+  },
+  {
+    id: 13,
+    name: "Imperio Restaurant",
+    cuisine: "Chinese",
+    imgUrl:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/a1629b9c7f59577a55411e94425c6d99",
+    ratings: "2.3",
+    preparation: 37,
+    amount: 350 ,
+    units:"for two",
+  },
+  {
+    id: 14,
+    name: "Temperature",
+    cuisine: "Beverages, American",
+    imgUrl:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/yz7ffjxfwmgwgukp4w9w",
+    ratings: "4.0",
+    preparation: 55,
+    amount: 400 ,
+    units:"for two",
+  },
+  {
+    id: 15,
+    name: "Angel Mess",
+    cuisine: "Kerala, South Indian",
+    imgUrl:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xk45atw1txieojraxowr",
+    ratings: "4.6",
+    preparation: 41,
+    amount: 250 ,
+    units:"for two",
+  },
+  {
+    id: 16,
+    name: "Cafe Graze-Plant Based Cafe",
+    cuisine: "Beverages, Juices",
+    imgUrl:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gta92coa4477as9eu2ms",
+    ratings: "3.2",
+    preparation: 53,
+    amount: 600 ,
+    units:"for two",
   },
 ];
 
@@ -143,7 +201,6 @@ function itemRenderer(inpObj) {
     let img = document.createElement("img");
     img.src = e.imgUrl;
     div2.appendChild(img);
-    
 
     let head = document.createElement("h2");
     head.innerText = e.name;
@@ -151,7 +208,7 @@ function itemRenderer(inpObj) {
 
     let para = document.createElement("p");
     para.innerText = e.cuisine;
-    para.classList.add("cusine-para")
+    para.classList.add("cusine-para");
     div2.appendChild(para);
 
     // =============INNER DIV==============
@@ -177,17 +234,17 @@ function itemRenderer(inpObj) {
     ratings();
     function ratings() {
       if (e.ratings >= 4.0) {
-        icondiv.classList.add('icon-div-green')
+        icondiv.classList.add("icon-div-green");
         // atag.style.border = "1px solid white";
         // atag.style.backgroundColor = "green";
         // atag.style.color = "white";
       } else if (e.ratings >= 2.5 && e.ratings <= 3.9) {
-        icondiv.classList.add('icon-div-orange')
+        icondiv.classList.add("icon-div-orange");
         // atag.style.border = "1px solid white";
         // atag.style.backgroundColor = "orange";
         // atag.style.color = "white";
       } else if (e.ratings <= 2.4) {
-        icondiv.classList.add('icon-div-red')
+        icondiv.classList.add("icon-div-red");
         // atag.style.border = "1px solid white";
         // atag.style.backgroundColor = "red";
         // atag.style.color = "white";
@@ -199,29 +256,29 @@ function itemRenderer(inpObj) {
     innerdiv.appendChild(innerhead);
 
     let innerhead2 = document.createElement("h4");
-    innerhead2.innerText = e.eachone;
+    innerhead2.innerText ="Rs."+ e.amount+" "+e.units;
     innerdiv.appendChild(innerhead2);
 
     // increment decrement
 
-    let incDiv=document.createElement("p")
-    div2.appendChild(incDiv)
+    let incDiv = document.createElement("p");
+    incDiv.classList.add("qnty-sec")
+    div2.appendChild(incDiv);
 
-    let decreDiv=document.createElement("span")
-    decreDiv.innerHTML='-'
-    decreDiv.setAttribute("onclick","sub()")
-    incDiv.appendChild(decreDiv)
+    let decreDiv = document.createElement("span");
+    decreDiv.innerHTML = "-";
+    decreDiv.setAttribute("onclick", "sub(this)");
+    incDiv.appendChild(decreDiv);
 
-    let zeroDiv=document.createElement("span")
-    zeroDiv.classList.add("leastVal")
-    zeroDiv.innerHTML='0'
-    incDiv.appendChild(zeroDiv)
+    let zeroDiv = document.createElement("span");
+    zeroDiv.classList.add("leastVal");
+    zeroDiv.innerHTML = "0";
+    incDiv.appendChild(zeroDiv);
 
-    let increDiv=document.createElement("span")
-    increDiv.innerHTML='+'
-    increDiv.setAttribute("onclick","add()")
-    incDiv.appendChild(increDiv)
-
+    let increDiv = document.createElement("span");
+    increDiv.innerHTML = "+";
+    increDiv.setAttribute("onclick", "add(this)");
+    incDiv.appendChild(increDiv);
   });
 }
 
@@ -260,22 +317,50 @@ function sortRatings() {
   itemRenderer(sortRatingObj);
 }
 
-function filterCusine(){
+function filterCusine() {
   let colsRemove = document.querySelectorAll(".col");
   colsRemove.forEach((e) => {
     e.remove();
   });
- let filterCusineObj=food.filter(function(e){
-  console.log(e.cuisine)
-   return e.cuisine== "South Indian"
- })
- itemRenderer(filterCusineObj);
- console.log(filterCusineObj)
+  let filterCusineObj = food.filter(function (e) {
+    console.log(e.cuisine);
+    return e.cuisine == "South Indian";
+  });
+  itemRenderer(filterCusineObj);
+  console.log(filterCusineObj);
 }
 
 // add function
-function add(){
-  let addNum=document.getElementsByClassName("leastVal")
-    let count=parseInt(addNum.innerHTML);
-    addNum.innerHTML=count++;
+function add(e) {
+  e.parentElement.childNodes.forEach(function (cv) {
+  if(cv.classList.contains('leastVal')){
+    var a = parseInt(cv.innerHTML)
+    cv.innerHTML=++a
+      }
+    })
+}
+// sub function
+function sub(e) {
+  e.parentElement.childNodes.forEach(function (cv) {
+  if(cv.classList.contains('leastVal')){
+    var a = parseInt(cv.innerHTML)
+   if(a>0){
+      cv.innerHTML=--a
+    }
+      }
+      
+    })
+    
+}
+
+// price amounts sorting
+function sortPrice() {
+  let sortPriceObj = food.slice().sort(function (a, b) {
+    return a.amount - b.amount;
+  });
+  let colsRemove = document.querySelectorAll(".col");
+  colsRemove.forEach((e) => {
+    e.remove();
+  });
+  itemRenderer(sortPriceObj);
 }
