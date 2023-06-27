@@ -259,26 +259,33 @@ function itemRenderer(inpObj) {
     innerhead2.innerText ="Rs."+ e.amount+" "+e.units;
     innerdiv.appendChild(innerhead2);
 
-    // increment decrement
+    //order button
+    let orderBtn=document.createElement("a");
+    orderBtn.setAttribute("href","items.html");
+    orderBtn.classList.add("orderButton");
+    orderBtn.innerHTML="Order Here";
+    div2.appendChild(orderBtn);
 
-    let incDiv = document.createElement("p");
-    incDiv.classList.add("qnty-sec")
-    div2.appendChild(incDiv);
+    // add to cart section
 
-    let decreDiv = document.createElement("span");
-    decreDiv.innerHTML = "-";
-    decreDiv.setAttribute("onclick", "sub(this)");
-    incDiv.appendChild(decreDiv);
+    // let incDiv = document.createElement("p");
+    // incDiv.classList.add("qnty-sec")
+    // div2.appendChild(incDiv);
 
-    let zeroDiv = document.createElement("span");
-    zeroDiv.classList.add("leastVal");
-    zeroDiv.innerHTML = "0";
-    incDiv.appendChild(zeroDiv);
+    // let decreDiv = document.createElement("span");
+    // decreDiv.innerHTML = "-";
+    // decreDiv.setAttribute("onclick", "sub(this)");
+    // incDiv.appendChild(decreDiv);
 
-    let increDiv = document.createElement("span");
-    increDiv.innerHTML = "+";
-    increDiv.setAttribute("onclick", "add(this)");
-    incDiv.appendChild(increDiv);
+    // let zeroDiv = document.createElement("span");
+    // zeroDiv.classList.add("leastVal");
+    // zeroDiv.innerHTML = "0";
+    // incDiv.appendChild(zeroDiv);
+
+    // let increDiv = document.createElement("span");
+    // increDiv.innerHTML = "+";
+    // increDiv.setAttribute("onclick", "add(this)");
+    // incDiv.appendChild(increDiv);
   });
 }
 
@@ -316,7 +323,7 @@ function sortRatings() {
   });
   itemRenderer(sortRatingObj);
 }
-
+// cusine filter
 function filterCusine() {
   let colsRemove = document.querySelectorAll(".col");
   colsRemove.forEach((e) => {
@@ -330,31 +337,8 @@ function filterCusine() {
   console.log(filterCusineObj);
 }
 
-// add function
-function add(e) {
-  e.parentElement.childNodes.forEach(function (cv) {
-  if(cv.classList.contains('leastVal')){
-    var a = parseInt(cv.innerHTML)
-    cv.innerHTML=++a
-      }
-    })
-}
-// sub function
-function sub(e) {
-  e.parentElement.childNodes.forEach(function (cv) {
-  if(cv.classList.contains('leastVal')){
-    var a = parseInt(cv.innerHTML)
-   if(a>0){
-      cv.innerHTML=--a
-    }
-      }
-      
-    })
-    
-}
-
-// price amounts sorting
-function sortPrice() {
+// price amounts sorting low to high
+function sortPriceLow() {
   let sortPriceObj = food.slice().sort(function (a, b) {
     return a.amount - b.amount;
   });
@@ -364,3 +348,39 @@ function sortPrice() {
   });
   itemRenderer(sortPriceObj);
 }
+
+// price amounts sorting high to low
+function sortPriceHigh() {
+  let sortPriceObj = food.slice().sort(function (a, b) {
+    return b.amount - a.amount;
+  });
+  let colsRemove = document.querySelectorAll(".col");
+  colsRemove.forEach((e) => {
+    e.remove();
+  });
+  itemRenderer(sortPriceObj);
+}
+
+// // add function
+// function add(e) {
+//   e.parentElement.childNodes.forEach(function (cv) {
+//   if(cv.classList.contains('leastVal')){
+//     var a = parseInt(cv.innerHTML)
+//     cv.innerHTML=++a
+//       }
+//     })
+// }
+// // sub function
+// function sub(e) {
+//   e.parentElement.childNodes.forEach(function (cv) {
+//   if(cv.classList.contains('leastVal')){
+//     var a = parseInt(cv.innerHTML)
+//    if(a>0){
+//       cv.innerHTML=--a
+//     }
+//       }
+      
+//     })
+    
+// }
+

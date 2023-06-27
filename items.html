@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        margin-top: 25px;
+    }
+    .container{
+        width: 80%;
+    margin: auto;
+    }
+    .row{
+        display:flex;
+        flex-direction: column;
+    }
+    .col-card{
+        display: flex;
+        justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px dotted gray;
+    }
+    .qnty-sec{
+        cursor: pointer;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 0 6px;
+    background-color: #fff;
+    border: none;
+    color: green;
+    box-shadow: 1px 1px 3px 2px #8b8989;
+}
+.offer-sec{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;   
+     margin: 15px 0;
+}
+.offer{
+    box-shadow: 2px 2px 6px 2px gray;
+    padding: 2px 10px;
+}
+h3{
+    color: forestgreen;
+}
+h2{
+    color: #000000ad;
+}
+
+</style>
+<body>
+   <section>
+    
+    <div class="container">
+        <button onclick="homeClick()"> HOME</button>
+        <div class="offer-sec">
+            <div class="offer">
+                <p>20% OFF UPTO Rs.120</p>
+                <p>USE FEDARLLC | ABOVE Rs.249</p>
+            </div>
+            <div class="offer">
+                <p>FLAT Rs.100 OFF</p>
+                <p>USE AUCC100 | ABOVE Rs.399</p>
+            </div>
+            <div class="offer">
+                <p>FLAT Rs.100 OFF</p>
+                <p>USE AUCC100 | ABOVE Rs.399</p>
+            </div>
+        </div>
+        <h3>FOOD ITEMS</h3>
+        
+    </div>
+   </section>
+    
+
+    <script src="./main2.js"></script>
+</body>
+</html>
