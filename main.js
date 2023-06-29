@@ -8,7 +8,7 @@ let food = [
     ratings: "4.4",
     preparation: 45,
     amount: 200,
-    units:"for two",
+    units: "for two",
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pljxtoxjtpn8wecz2icg",
     ratings: "3.4",
     preparation: 37,
-    amount: 350 ,
-    units:"for two",
+    amount: 350,
+    units: "for two",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/0dca660dbdf2e04f9b861c4426ffd41e",
     ratings: "2.2",
     preparation: 25,
-    amount: 250 ,
-    units:"for two",
+    amount: 250,
+    units: "for two",
   },
   {
     id: 4,
@@ -40,8 +40,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ntuo17tgujgaabprbhfj",
     ratings: "4.4",
     preparation: 40,
-    amount: 200 ,
-    units:"for two",
+    amount: 200,
+    units: "for two",
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/whinpapa0ltdpemkwqj0",
     ratings: "3.9",
     preparation: 45,
-    amount: 500 ,
-    units:"for two",
+    amount: 500,
+    units: "for two",
   },
   {
     id: 6,
@@ -62,8 +62,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ee5f8e06b300efc07c9fe3f4df40dfc4",
     ratings: "4.4",
     preparation: 35,
-    amount: 400 ,
-    units:"for two",
+    amount: 400,
+    units: "for two",
   },
   {
     id: 7,
@@ -73,8 +73,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zf2wklnad7kyvgk98thl",
     ratings: "3.3",
     preparation: 25,
-    amount: 300 ,
-    units:"for two",
+    amount: 300,
+    units: "for two",
   },
   {
     id: 8,
@@ -84,8 +84,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/a8kat3hsu3fasmedhigp",
     ratings: "4.0",
     preparation: 40,
-    amount: 250 ,
-    units:"for two",
+    amount: 250,
+    units: "for two",
   },
   {
     id: 9,
@@ -95,9 +95,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ndlmfkgwt4yrgjqss8u3",
     ratings: "3.9",
     preparation: 45,
-    amount: "Rs.200 ",
-    amount: 300 ,
-    units:"for two",
+    amount: 300,
+    units: "for two",
   },
   {
     id: 10,
@@ -107,9 +106,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ocsapohbzangojolgvtt",
     ratings: "2.4",
     preparation: 30,
-    amount: "Rs.200 ",
-    amount: 350 ,
-    units:"for two",
+    amount: 350,
+    units: "for two",
   },
   {
     id: 11,
@@ -119,8 +117,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zxczitdem6qq8hv1mt0a",
     ratings: "3.6",
     preparation: 25,
-    amount: 390 ,
-    units:"for two",
+    amount: 390,
+    units: "for two",
   },
   {
     id: 12,
@@ -130,8 +128,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/py9b9lfxb8buvtgpq1kd",
     ratings: "4.2",
     preparation: 40,
-    amount: 250 ,
-    units:"for two",
+    amount: 250,
+    units: "for two",
   },
   {
     id: 13,
@@ -141,8 +139,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/a1629b9c7f59577a55411e94425c6d99",
     ratings: "2.3",
     preparation: 37,
-    amount: 350 ,
-    units:"for two",
+    amount: 350,
+    units: "for two",
   },
   {
     id: 14,
@@ -152,8 +150,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/yz7ffjxfwmgwgukp4w9w",
     ratings: "4.0",
     preparation: 55,
-    amount: 400 ,
-    units:"for two",
+    amount: 400,
+    units: "for two",
   },
   {
     id: 15,
@@ -163,8 +161,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xk45atw1txieojraxowr",
     ratings: "4.6",
     preparation: 41,
-    amount: 250 ,
-    units:"for two",
+    amount: 250,
+    units: "for two",
   },
   {
     id: 16,
@@ -174,8 +172,8 @@ let food = [
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gta92coa4477as9eu2ms",
     ratings: "3.2",
     preparation: 53,
-    amount: 600 ,
-    units:"for two",
+    amount: 600,
+    units: "for two",
   },
 ];
 
@@ -184,7 +182,7 @@ let cont = document.querySelector(".container");
 let cards = document.createElement("div");
 cards.classList.add("row");
 cont.appendChild(cards);
-itemRenderer(food); // revelance calling function
+itemRenderer(food); // for first time rendering
 
 // HTML CREATION FOR EACH COLUMN
 
@@ -256,14 +254,14 @@ function itemRenderer(inpObj) {
     innerdiv.appendChild(innerhead);
 
     let innerhead2 = document.createElement("h4");
-    innerhead2.innerText ="Rs."+ e.amount+" "+e.units;
+    innerhead2.innerText = "Rs." + e.amount + " " + e.units;
     innerdiv.appendChild(innerhead2);
 
     //order button
-    let orderBtn=document.createElement("a");
-    orderBtn.setAttribute("href","items.html");
+    let orderBtn = document.createElement("a");
+    orderBtn.setAttribute("href", "items.html");
     orderBtn.classList.add("orderButton");
-    orderBtn.innerHTML="Order Here";
+    orderBtn.innerHTML = "Order Here";
     div2.appendChild(orderBtn);
 
     // add to cart section
@@ -379,8 +377,7 @@ function sortPriceHigh() {
 //       cv.innerHTML=--a
 //     }
 //       }
-      
-//     })
-    
-// }
 
+//     })
+
+// }

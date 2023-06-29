@@ -1,84 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    section{
-        margin-top: 25px;
-    }
-    .container{
-        width: 80%;
-    margin: auto;
-    }
-    .row{
-        display:flex;
-        flex-direction: column;
-    }
-    .col-card{
-        display: flex;
-        justify-content: space-between;
-    align-items: center;
-    border-bottom: 1.5px dotted gray;
-    }
-    .qnty-sec{
-        cursor: pointer;
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
-    border: 1px solid;
-    padding: 0 6px;
-    background-color: #fff;
-    border: none;
-    color: green;
-    box-shadow: 1px 1px 3px 2px #8b8989;
-}
-.offer-sec{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;   
-     margin: 15px 0;
-}
-.offer{
-    box-shadow: 2px 2px 6px 2px gray;
-    padding: 2px 10px;
-}
-h3{
-    color: forestgreen;
-}
-h2{
-    color: #000000ad;
-}
 
-</style>
-<body>
-   <section>
-    
-    <div class="container">
-        <button onclick="homeClick()"> HOME</button>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <style>
+    section {
+      margin-top: 25px;
+    }
+    .container,
+    .container1 {
+      width: 80%;
+      margin: auto;
+    }
+    /* nav section */
+    .nav-head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .navS {
+      width: 50%;
+    }
+    .nav-l {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .nav-img-div {
+      height: 60px;
+      width: 60px;
+      cursor: pointer;
+    }
+    .nav-l img {
+      width: 100%;
+    }
+    .nav-l label {
+      font-size: 18px;
+      font-weight: 800;
+      border-bottom: 2px solid;
+    }
+    .nav-l input {
+      border: none;
+      outline: none;
+    }
+    .nav-r {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .nav-r i {
+      padding-right: 6px;
+    }
+    .nav-r a {
+      text-decoration: none;
+      color: #000000bd;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .nav-r a:hover {
+      color: orange;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    .col-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px dotted gray;
+    }
+    .qnty-sec {
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+      font-size: 20px;
+      border: 1px solid;
+      padding: 0 6px;
+      background-color: #fff;
+      border: none;
+      color: green;
+      box-shadow: 1px 1px 3px 2px #8b8989;
+    }
+    .offer-sec {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    .offer {
+      box-shadow: 2px 2px 6px 2px gray;
+      padding: 2px 10px;
+    }
+    h3 {
+      color: forestgreen;
+    }
+    h2 {
+      color: #000000ad;
+    }
+    .icon-sec {
+      margin-top: 12px;
+    }
+    .icon-sec i {
+      padding-right: 5px;
+    }
+    .bi-caret-up-square {
+      color: red;
+    }
+    .bi-star-fill {
+      color: orange;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container1">
+        <!-- <h1 style="text-align :center;color:#fc892c;">SWIGGY</h1> -->
+        <!-- nav section -->
+        <div class="nav-head">
+          <div class="nav-l navS">
+            <div class="nav-img-div">
+              <img src="image/swiggy.webp" onclick="homeClick()" alt="swiggy" />
+            </div>
+            <div>
+              <label for="name">Other</label>
+              <input type="text" id="name" placeholder="Enter Your Location" />
+            </div>
+          </div>
+          <div class="nav-r navS">
+            <a href="#" onclick="homeClick()"
+              ><i class="bi bi-search"></i> Home</a
+            >
+            <a href="#"><i class="bi bi-search"></i> Search</a>
+            <a href="#"><i class="bi bi-percent"></i> Offer</a>
+            <a href="#"><i class="bi bi-patch-question"></i> Help</a>
+            <a href="#"><i class="bi bi-person"></i> SignIn</a>
+            <a href="#"
+              ><i class="bi bi-cart"></i> <span id="cart"> </span> Cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
         <div class="offer-sec">
-            <div class="offer">
-                <p>20% OFF UPTO Rs.120</p>
-                <p>USE FEDARLLC | ABOVE Rs.249</p>
-            </div>
-            <div class="offer">
-                <p>FLAT Rs.100 OFF</p>
-                <p>USE AUCC100 | ABOVE Rs.399</p>
-            </div>
-            <div class="offer">
-                <p>FLAT Rs.100 OFF</p>
-                <p>USE AUCC100 | ABOVE Rs.399</p>
-            </div>
+          <div class="offer">
+            <p>20% OFF UPTO Rs.120</p>
+            <p>USE FEDARLLC | ABOVE Rs.249</p>
+          </div>
+          <div class="offer">
+            <p>FLAT Rs.100 OFF</p>
+            <p>USE AUCC100 | ABOVE Rs.399</p>
+          </div>
+          <div class="offer">
+            <p>FLAT Rs.100 OFF</p>
+            <p>USE AUCC100 | ABOVE Rs.399</p>
+          </div>
         </div>
         <h3>FOOD ITEMS</h3>
-        
-    </div>
-   </section>
-    
+        <button>PAY</button>
+      </div>
+    </section>
 
     <script src="./main2.js"></script>
-</body>
+  </body>
 </html>

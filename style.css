@@ -5,81 +5,81 @@
   font-family: "Poppins", sans-serif;
 }
 /* nav section */
-.nav-head{
+.nav-head {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 20px 0;
 }
-.navS{
-  width: 50%; 
+.navS {
+  width: 50%;
 }
-.nav-l{
+.nav-l {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.nav-img-div{
+.nav-img-div {
   height: 60px;
   width: 60px;
 }
-.nav-l img{
+.nav-l img {
   width: 100%;
 }
-.nav-l label{
+.nav-l label {
   font-size: 18px;
   font-weight: 800;
   border-bottom: 2px solid;
 }
-.nav-l input{
+.nav-l input {
   border: none;
   outline: none;
 }
-.nav-r{
+.nav-r {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.nav-r i{
+.nav-r i {
   padding-right: 6px;
 }
-.nav-r a{
+.nav-r a {
   text-decoration: none;
   color: #000000bd;
   font-size: 18px;
   font-weight: 900;
 }
-.nav-r a:hover{
-  color:orange;
+.nav-r a:hover {
+  color: orange;
 }
 /* image cards */
-.img-sec{
+.img-sec {
   background-color: rgb(23, 26, 41);
   margin: 30px 0;
   padding: 40px 0;
 }
-.imgCards{
+.imgCards {
   display: flex;
-  gap:30px;
+  gap: 30px;
   justify-content: center;
 }
-.imgCards img{
+.imgCards img {
   height: 235px;
   width: 235px;
   transition: 0.3s;
   overflow: hidden;
 }
-.imgCards img:hover{
+.imgCards img:hover {
   transform: scale(1.1);
 }
 /* restraunt buttons */
-.res-sec{
+.res-sec {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#buttons button{
+#buttons button {
   border: none;
   padding: 5px 10px;
   font-size: 16px;
@@ -103,18 +103,18 @@
   box-shadow: 0px 0px 2px gray;
   position: relative;
 }
-.orderButton{
-    text-decoration: none;
-    display: none;
-    position: absolute;
-    right: 7px;
-    bottom: 42px;
-    background: #f1a954;
-    color: black;
-    padding: 2px;
-    border-radius: 5px;
+.orderButton {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  right: 7px;
+  bottom: 42px;
+  background: #f1a954;
+  color: black;
+  padding: 2px;
+  border-radius: 5px;
 }
-.col-card:hover .orderButton{
+.col-card:hover .orderButton {
   box-shadow: none;
   display: block;
 }
@@ -169,7 +169,6 @@ h4 {
     display: flex;
     gap: 10px;
 } */
-
 
 /* .inner-col{
         width:33.3%
